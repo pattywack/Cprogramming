@@ -10,7 +10,7 @@ int main (void)
 	printf ("Please enter calculations:\n");
 	
 	while ( end_flag == false ) {
-			printf ("= %f\n", accumulator);
+			
 			scanf ("%f %c\n", &number, &operator);
 			switch (operator)
 			{
@@ -36,6 +36,7 @@ int main (void)
 					printf ("Unknown operator.\n");
 					break;
 			}
+			printf ("= %f\n", accumulator);
 		 }
 
 	return 0;
